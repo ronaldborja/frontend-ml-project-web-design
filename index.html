@@ -1,130 +1,143 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducción al Machine Learning</title>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/robotomono/v22/L0xTDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vrtSM1J-gEPT5Ese6hmHSh0me8iUI0.woff2" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>inicio</title>
 </head>
 
 <body>
-    <header>
-        <h1>Introducción al Machine Learning</h1>
 
-        <nav>
-            <ul>
-                <li><a href="#definicion">¿Qué es?</a></li>
-                <li><a href="#usos">Aplicaciones</a></li>
-                <li><a href="#algoritmos">Algoritmos</a></li>
-                <li><a href="suscripciones.html">Suscribirse</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">ronald borja</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbar-start" aria-controls="navbar-start" aria-expanded="false" 
+                        arial-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbar-start">
+                    <ul class="navbar-nav ms-auto mb-2 mg-lb-0">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">projects</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">machine learning</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">youtube</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="suscripciones.html">blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section id="definicion">
-        <h2>1. ¿Qué es el Machine Learning?</h2>
-        <p>El Machine Learning es un subcampo de la Inteligencia Artificial que busca crear modelos a partir de conjuntos de datos usando algebra lineal y optimizarlos usando calculo.<br><br>
-        Para saber más, puedes visitar <a href="https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico" target="_blank">este enlace</a></p>
-        <div class="video-container">
-            <iframe width="700" height="400" src="https://www.youtube.com/embed/n-DflQldMuc?si=KV8VpP6AyVFNHtgd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
-    <section id="usos">
-        <h2>2. Aplicaciones del Machine Learning</h2>
-        <br>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Reconocimiento de voz</h5>
-                        <p class="card-text">Desarrollo de asistentes virtuales como Siri, Google Assitant, Alexa, entre otros...</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Recomendaciones de productos</h5>
-                        <p class="card-text">Personalización de la experiencia del usuario a partir de algoritmos de recomendación.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Detección de fraudes</h5>
-                        <p class="card-text">Detección temprana de fraudes a partir de análisis en los patrones de gastos y comportamiento de los clientes.</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Diagnóstico médico</h5>
-                        <p class="card-text">Detección temprana de cáncer, anomalías en imágenes, diabetes, enfermedades cardiacas, entre otros...</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Vehículos autónomos</h5>
-                        <p class="card-text">Capacidad para reconocer señales de tráfico, peatones y otros vehículos.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section>
+        <div id="carouselE1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-idicators">
+                <button type="button" data-bs-target="#carouselE1" 
+                        data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"
+                ></button>
     
-
-    <section id="entrenamiento">
-        <h2>3. Entrenamiento de un modelo de machine learning</h2>
-        <br>
-        <img src="img/framework ml.png" alt="Marco para implementar un modelo ML" id="img-1">
+                <button type="button" data-bs-target="#carouselE1" 
+                        data-bs-slide-to="1" aria-current="true"
+                        aria-label="Slide 2"
+                ></button>
+    
+                <button type="button" data-bs-target="#carouselE1" 
+                        data-bs-slide-to="2" class="active" aria-current="true"
+                        aria-label="Slide 3"
+                ></button>
+            </div>
+    
+    
+            <div class="carousel-inner">
+    
+                <div class="carousel-item active">
+                    <img src="img/feynman.jpeg" class="d-block w-100" alt="">
+                
+                    <div class="carousel-caption">
+                        <p id="presentacion">I want to explore how to blend the power of science with technology.
+                        </p>
+    
+                        <br>
+                        <a href="#" class="btn btn-primary mt-3">more about me -></a>
+                    </div>
+                </div>
+            </div>        
+        </div>    
     </section>
 
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-serv1 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">backend development</h3>
+                            <p>
+                                Experience in web app development using FastAPI, with additional proficiency in Java and Spring.
+                            </p>
 
-    <section id="algoritmos">
-        <h2>4. Algoritmos de Machine Learning</h2>
-        <br>
-        <table>
-            <tr>
-                <th>Algoritmo</th>
-                <th>Descripción</th>
-            </tr>
-            <tr>
-                <td>Regresión lineal</td>
-                <td>Predice valores numéricos estableciendo relaciones lineales entre variables.</td>
-            </tr>
-            <tr>
-                <td>KNN</td>
-                <td>Clasifica datos basados en vecinos más cercanos.</td>
-            </tr>
-            <tr>
-                <td>Decision Trees</td>
-                <td>Divide datos en subconjuntos basados en decisiones específicas.</td>
-            </tr>
+                            <button class="btn bg-primary text-white">more information</button>
+                        </div>
+                    </div>
+                </div>
 
-            <tr>
-                <td>Neural Networks</td>
-                <td>Aprende patrones complejos a través de conexiones neuronales interconectadas.</td>
-            </tr>
 
-            <tr>
-                <td>Suport Vector Machines</td>
-                <td>Crea un hiperplano óptimo para clasificar datos.</td>
-            </tr>
+                <div class="col-12 col-md col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-serv2 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">ai/ml</h3>
+                            <p>
+                                I have knowledge in data analysis, classical machine learning algorithms and neural networks. 
+                            </p>
 
-            <tr>
-                <td>Random Forest</td>
-                <td>Promedia múltiples árboles de decisión para hacer predicciones.</td>
-            </tr>
-        </table>
+                            <button class="btn bg-primary text-white">more information</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-12 col-md col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-serv3 pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">youtube</h3>
+                            <p>
+                                I have a YouTube channel where I share my programming knowledge every week.
+                            </p>
+
+                            <button class="btn bg-primary text-white">more information</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>Desarrollado por Ronald Borja Roman - Introducción al Machine Learning</p>
-    </footer>
-
+ 
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
